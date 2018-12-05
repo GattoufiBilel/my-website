@@ -1,0 +1,26 @@
+.container {
+    
+    header {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        img {            
+            max-width: 105px;
+            max-height: 105px;
+            border-radius: 50%;
+            border: 2px solid #1f1f1f;
+        }
+
+        .bio {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .social-network {
+                a {
+                    color: #949494;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
