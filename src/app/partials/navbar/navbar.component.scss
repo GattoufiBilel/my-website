@@ -1,5 +1,5 @@
 .navbar {
-    padding: 15px 300px;   
+    padding: 15px 120px;   
     border-radius: 0 !important; 
 
     .navbar-brand {
@@ -14,7 +14,15 @@
   .nav-link {
     padding-right: .5rem !important;
     padding-left: .5rem !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;   
+    transition: all 0.3s ease;
+    &:hover ,&:focus, &:active {
+        color: rgb(231, 23, 23);
+    }
   }
+
 
 @media screen and (max-width: 600px) {
     .navbar {

@@ -1,27 +1,71 @@
 .container {
     
-    header {
+    .home-header {        
         display: flex;
-        font-family: 'Montserrat', sans-serif;
-        img {            
-            max-width: 105px;
-            max-height: 105px;
-            border-radius: 50%;
-            border: 2px solid #1f1f1f;
+        height: 400px;
+        flex-wrap: wrap;       
+        justify-content: center;
+        align-items: center;        
+        font-family: 'Open Sans', sans-serif;
+        animation: displaytext 1s;
+
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            animation: bounceIn 1s; 
         }
-
         .bio {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
 
-            .social-network {
-                a {
-                    color: #949494;
-                    font-size: 30px;
-                }
+            h1 {
+                color: #ea0e0e;
             }
+        }    
+    }
+}
+
+
+@keyframes displaytext {
+    0% {   opacity: 0;   }
+    50% {  opacity: 0.3; }
+    75% {  opacity: 0.7; }    
+    100% { opacity: 1;   }
+}
+
+@keyframes bounceIn {
+    0% {
+      opacity: 1;
+      transform: scale(.3);
+    } 
+  
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    } 
+  
+    70% {
+      opacity: 1;
+      transform: scale(.9);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+@media (max-width: 767.98px) {
+    header {
+        img {
+            display: none;
         }
     }
 }
 
+@media screen and (max-width: 600px) {
+    header {
+        img {
+            display: none;
+        }
+    }
+}

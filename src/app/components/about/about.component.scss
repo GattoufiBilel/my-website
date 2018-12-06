@@ -1,4 +1,52 @@
-img {
-    max-width: 100px;
-    max-height: 100px;
+
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    color: #000000;
+    .bio {      
+        flex: 1 1 25%;
+
+        .list-group {            
+
+            img {
+                max-width: 263px;
+                max-height: 263px;
+                border-radius: 5px;
+            }
+    
+            h4 { margin-bottom: 0; }
+    
+            .social-network {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                
+                a {                
+                    font-size: 30px;
+                }
+            }
+        }
+
+    }
+
+
+    .bio-info {
+        flex: 1 1 70%;
+        .list-group {            
+            margin-left: 15px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+
+    .bio-info {        
+        .list-group {
+            margin-top: 10px;
+            margin-left: 0 !important;
+        }
+    }
+    
 }

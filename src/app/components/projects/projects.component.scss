@@ -1,0 +1,27 @@
+.card {
+    animation: carddisplay 1s;
+
+    .card-text {
+        color: #9e9e9e;
+    }
+
+    .card-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@keyframes carddisplay {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
