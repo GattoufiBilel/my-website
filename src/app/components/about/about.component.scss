@@ -24,9 +24,26 @@
     .social-network {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        a i {                
+        justify-content: space-around;
+        a i {               
+            color: #ffffff; 
             font-size: 30px;
+        }
+    }
+
+    .languages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;        
+
+        .fa-star {
+            float: right;    
+            margin-left: 5px;        
+        }
+
+        .filled {
+            color: #f7df0e;
         }
     }
     
@@ -35,6 +52,12 @@
             background-color: inherit;
             border-bottom: 1px solid rgba(255, 255, 255, 0.125);
         }
+    }
+
+    h5 {
+        color: #007bff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+        padding-bottom: 10px;
     }
 }
 
