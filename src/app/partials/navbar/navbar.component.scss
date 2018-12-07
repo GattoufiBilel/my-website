@@ -6,7 +6,7 @@
     .navbar-brand {
         font-family: 'Courgette', cursive;
         h3 {
-            color: #ea0e0e; 
+            color: #607fe9; 
             margin: 0;
         }
         span {
@@ -27,7 +27,7 @@
     font-size: 14px;   
     transition: all 0.3s ease;
     &:hover ,&:focus, &:active {
-        color: rgb(231, 23, 23);
+        color: #607fe9;
     }
   }
 
@@ -41,8 +41,18 @@
 
 @media screen and (max-width: 600px) {
     .navbar {
-        padding: 5px 10px;
         flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+
+        ul {
+            padding: 0;
+            margin: 0 !important;
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+            li { width: 100%; }
+        }
         .navbar-nav {
             flex-direction: column;
         }

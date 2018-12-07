@@ -1,4 +1,4 @@
-<div class="container mt-5 mb-5">
+<div class="container h-100 mt-5 mb-5">
 
   <div class="row about-row">
 
@@ -13,32 +13,37 @@
       </div>
 
       <div>
-        <a target="_blank" class="twitter-btn" title="Follow @HaikelFazzani on Twitter" [href]="">
+        <a target="_blank" class="twitter-btn" title="Follow @HaikelFazzani on Twitter" [href]="twitterLink">
           <i class="fab fa-twitter"></i>
           <span class="label">@HaikelFazzani</span>
         </a>
       </div>
     </div>
 
-    <div class="col-md-6">
-      <ul class="list-group">
-        <li class="list-group-item"><strong>Fullname : </strong> Haikel Fazzani</li>
-        <li class="list-group-item"><strong>Web developer :</strong> Angular, NodeJs and Java</li>
-        <li class="list-group-item"><strong>Email :</strong> haikel.fazzani@gmail.com</li>
-        <li class="list-group-item"><strong>Phone :</strong> +216 973 870</li>
-        <li class="list-group-item"><strong>Location :</strong> Ben Arous, Tunisia</li>
-        <li class="list-group-item"><strong>Microsoft Certification : </strong>
-          <a [href]="certificationLinks[0]" target="_blank">Database</a>
-          <a [href]="certificationLinks[1]" target="_blank"> Java</a>
-        </li>
-      </ul>
+    <div class="col-md-6 mb-3">
+      <h5>Infos</h5>
+      <div class="flex-column">
+        <div><i class="fas fa-user pr-3"></i><span> Haikel Fazzani</span></div>
+        <div><i class="fas fa-laptop-code pr-3"></i><span>Angular, NodeJs and Java</span></div>
+        <div><i class="fas fa-envelope pr-3"></i><span> haikel.fazzani@gmail.com</span></div>
+        <div><i class="fas fa-phone pr-3"></i><span> +216 973 870</span></div>
+        <div><i class="fas fa-map-marker-alt pr-3"></i><span> Ben Arous, Tunisia</span></div>
+      </div>
+
+      <h5>University Certification</h5>
+      <div class="flex-column">
+        <div>
+          <a [href]="certificationLinks[0]" target="_blank"><i class="fas fa-link"></i> Database </a>
+          <a [href]="certificationLinks[1]" target="_blank"> <i class="fas fa-link"></i>Java</a>
+        </div>
+      </div>
 
     </div>
 
 
     <div class="col-md-3">
       <h5>Languages</h5>
-      <div class="languages">
+      <div class="flex-column">
         <div>Arabic
           <i class="fas fa-star filled"></i>
           <i class="fas fa-star filled"></i>
@@ -64,8 +69,8 @@
         </div>
       </div>
 
-      <h5 class="mt-5">Links</h5>
-      <div class="social-network mt-3">
+      <h5 class="mt-3">Links</h5>
+      <div class="flex-row-space">
         <a href=""><i class="fab fa-facebook"></i></a>
         <a class="ml-3" href=""><i class="fab fa-twitter-square"></i></a>
         <a class="ml-3" href=""><i class="fab fa-github-square"></i></a>

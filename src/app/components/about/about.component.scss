@@ -7,7 +7,7 @@
         justify-content: center;
         img {
             max-width: 255px;
-            max-height: 250px;
+            max-height: 255px;
             border-radius: 50%;
             border: 10px solid #ffffff;
             animation: bounceIn 1s;
@@ -19,48 +19,41 @@
             padding: 10px;            
         }
         
-    }
-    
-    .social-network {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        a i {               
-            color: #ffffff; 
-            font-size: 30px;
-        }
-    }
-
-    .languages {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-around;        
-
-        .fa-star {
-            float: right;    
-            margin-left: 5px;        
-        }
-
-        .filled {
-            color: #f7df0e;
-        }
-    }
-    
-    .list-group {        
-        li {
-            background-color: inherit;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.125);
-        }
-    }
+    }           
 
     h5 {
-        color: #007bff;
+        color: #607fe9;
         border-bottom: 1px solid rgba(255, 255, 255, 0.125);
         padding-bottom: 10px;
     }
 }
 
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;   
+    margin-bottom: 15px;
+    
+    .fa-star {
+        float: right;    
+        margin-left: 5px;        
+    }
+
+    .filled {
+        color: #f7df0e;
+    }
+}
+
+.flex-row-space {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a i {               
+        color: #ffffff; 
+        font-size: 30px;
+    }
+} 
 
 @keyframes bounceIn {
     0% {

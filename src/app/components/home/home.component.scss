@@ -1,12 +1,12 @@
 .container {
-    
+
     .home-header {        
         display: flex;
-        height: 400px;
         flex-wrap: wrap;       
         justify-content: center;
         align-items: center;        
         font-family: 'Open Sans', sans-serif;
+        height: 500px;
         animation: displaytext 1s;
 
         img {
@@ -17,7 +17,7 @@
         .bio {
 
             h1 {
-                color: #ea0e0e;
+                color: #607fe9;
             }
         }    
     }

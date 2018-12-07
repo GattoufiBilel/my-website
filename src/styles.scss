@@ -48,6 +48,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;      
 }
 
 @-ms-viewport {
@@ -66,7 +67,7 @@ body {
   line-height: 1.5;
   color: #ffffff;
   text-align: left;
-  background-color: #151515;
+  background-color: #151515;  
 }
 
 /* twitter button */
@@ -78,12 +79,16 @@ body {
   padding: 3px 5px;
   color: #ffffff;
   border-radius: 4px;
-  background-color: #48AAE6;
-  border: #48AAE6 solid 1px;
+  background-color: #607fe9;
+  border: #607fe9 solid 1px;
   font-size: 14px;
 
   .fa-twitter {
       line-height: inherit;
+  }
+
+  &:hover {
+    color: inherit;
   }
 }
 /**/
