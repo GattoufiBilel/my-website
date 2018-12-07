@@ -9,7 +9,7 @@
             max-width: 255px;
             max-height: 255px;
             border-radius: 50%;
-            border: 10px solid #ffffff;
+            border: 10px solid #ffc300;
             animation: bounceIn 1s;
         }
     
@@ -22,7 +22,7 @@
     }           
 
     h5 {
-        color: #607fe9;
+        color: #ffc300;
         border-bottom: 1px solid rgba(255, 255, 255, 0.125);
         padding-bottom: 10px;
     }
@@ -49,9 +49,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    a i {               
-        color: #ffffff; 
-        font-size: 30px;
+    .social-links {
+        a {
+            color: #ffffff; 
+            transition: all .3s;
+            i {                               
+                font-size: 30px;
+            }
+            &:hover {
+                color: #ffc300; 
+                padding-bottom: 5px;
+                border-bottom:2px solid #ffc300;
+            }
+        }        
     }
 } 
 

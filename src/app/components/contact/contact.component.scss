@@ -20,6 +20,28 @@
 }
 
 .form-contact {
+    .btn-primary {
+        background-color: #ffc300;
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,.16),0 0 5px 0 rgba(0,0,0,.12)!important;
+        border: 0;
+        padding: 7px 30px;
+        transition: all .3s ease;
+        text-transform: uppercase;
+        &:hover {
+            background-color: inherit;
+            border: 1px solid #ffc300;
+        }
+    }
+
+    textarea , input {
+        color: #fff;
+        border: 1px solid#ffc300;
+        background-color: inherit;
+        &:focus , &:active {
+            outline: none;
+        }
+    }
+
     .captcha {
         display:flex;
         flex-wrap:wrap;
@@ -35,6 +57,7 @@
             background-size: cover;
             background-clip: border-box;
             background-color: #484848;
+            border: 1px solid#ffc300;
         }
     
     }
