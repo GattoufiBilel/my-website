@@ -11,3 +11,30 @@
         font-size: 14px;
     }
 }
+
+
+.social-contact {
+    a {
+        font-size: 25px;
+    }
+}
+
+.captcha {
+    display:flex;
+    flex-wrap:wrap;
+
+    input {
+        padding: 0 10px;
+    }
+
+    .canva {
+        width: 100px;
+        height: 30px;
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../../assets/img/back.jpg');
+        background-size: cover;
+        background-clip: border-box;
+        background-color: #484848;
+    }
+
+  }
+   

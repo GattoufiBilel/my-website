@@ -69,6 +69,25 @@ body {
   background-color: #151515;
 }
 
+/* twitter button */
+.twitter-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 130px;
+  padding: 3px 5px;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #48AAE6;
+  border: #48AAE6 solid 1px;
+  font-size: 14px;
+
+  .fa-twitter {
+      line-height: inherit;
+  }
+}
+/**/
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -3982,14 +4001,6 @@ input[type="button"].btn-block {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.navbar-brand {
-  display: inline-block;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {

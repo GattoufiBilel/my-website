@@ -1,40 +1,48 @@
 <div class="container mt-5 mb-5">
 
-  <div class="about-info mb-3">
-    <div class="bio">
-      <ul class="list-group">
-        <li class="list-group-item"><img src="../../../assets/img/2.jpg" alt=""></li>
-        <li class="list-group-item">
-          <h4>Haikel Fazzani</h4>
-        </li>
-        <li class="list-group-item"><i class="fas fa-code"></i> Web Developer :
-          <div>Angular, NodeJs and Java</div>
-        </li>
-        <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Ben Arous, Tunisia</li>
-        <li class="list-group-item">
-          <div class="social-network">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a class="ml-3" href=""><i class="fab fa-twitter-square"></i></a>
-            <a class="ml-3" href=""><i class="fab fa-github-square"></i></a>
-            <a class="ml-3" href=""><i class="fab fa-linkedin"></i></a>
-            <a class="ml-3" href=""><i class="fab fa-codepen"></i></a>
-          </div>
-        </li>
-      </ul>
+  <div class="row about-row">
 
+    <div class="col-md-3 mb-3">
+      <div class="about-info">
+        <img src="../../../assets/img/2.jpg" alt="">
+        <p>
+          I love spending time coding and learning new things.
+          I like working in a team, 
+          you'll learn faster and much more. 
+          As the saying goes: 'two heads are better than one'.</p>
+      </div>
+
+      <div>
+        <a target="_blank" class="twitter-btn" title="Follow @HaikelFazzani on Twitter" [href]="">
+          <i class="fab fa-twitter"></i>
+          <span class="label">@HaikelFazzani</span>
+        </a>
+      </div>
     </div>
 
-    <div class="bio-info">
+    <div class="col-md-9">
       <ul class="list-group">
+        <li class="list-group-item"><strong>Fullname : </strong> Haikel Fazzani</li>
+        <li class="list-group-item"><strong>Web developer :</strong> Angular, NodeJs and Java</li>
         <li class="list-group-item"><strong>Email :</strong> haikel.fazzani@gmail.com</li>
         <li class="list-group-item"><strong>Phone :</strong> +216 973 870</li>
-        <li class="list-group-item"><strong>Address :</strong> tunis, tunisia</li>
-        <li class="list-group-item">Certification</li>
-        <li class="list-group-item">
-
+        <li class="list-group-item"><strong>Location :</strong> Ben Arous, Tunisia</li>
+        <li class="list-group-item"><strong>Microsoft Certification : </strong>
+          <a [href]="certificationLinks[0]" target="_blank">Database</a>
+          <a [href]="certificationLinks[1]" target="_blank"> Java</a>
         </li>
       </ul>
+
+      <div class="social-network mt-3">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a class="ml-3" href=""><i class="fab fa-twitter-square"></i></a>
+        <a class="ml-3" href=""><i class="fab fa-github-square"></i></a>
+        <a class="ml-3" href=""><i class="fab fa-linkedin"></i></a>
+        <a class="ml-3" href=""><i class="fab fa-codepen"></i></a>
+      </div>
     </div>
-  </div>
+
+
+  </div><!-- /row -->
 
 </div>

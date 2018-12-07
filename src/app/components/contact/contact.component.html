@@ -2,11 +2,18 @@
 
   <div class="row mt-5">
 
-    <div class="col-md-6">
+    <div class="col-md-6 mb-3">
       <h2 class="title-tab">Contact me now <span class="badge badge-success ml-3">Available</span></h2>
 
       <h4 class="txt-contact">I’m currently looking for projects.
-        If you prefer email, get in touch with me via haikel.fazzani@gmail.com</h4>
+        If you prefer email, get in touch with me via <a href="#"><span>haikel.fazzani@gmail.com</span></a></h4>
+
+      <div>
+        <a target="_blank" class="twitter-btn" title="Follow @HaikelFazzani on Twitter" [href]="twitterLink">
+          <i class="fab fa-twitter"></i>
+          <span class="label">@HaikelFazzani</span>
+        </a>
+      </div>
     </div>
 
     <div class="col-md-6">
@@ -32,9 +39,11 @@
           <textarea class="form-control" id="message" rows="3"></textarea>
         </div>
 
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="form-group">
+          <div class="captcha">
+            <input type="text" name="txt" id="txt" (change)="validate($event)" placeholder="Enter code captcha..">
+            <div class="canva ml-3" #mycanva></div>
+          </div>
         </div>
 
         <button type="submit" class="btn btn-danger">Send</button>

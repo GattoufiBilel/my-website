@@ -1,52 +1,78 @@
 
-.about-info {
-    display: flex;
-    flex-wrap: wrap;
-    color: #000000;
-    .bio {      
-        flex: 1 1 25%;
-
-        .list-group {            
-
-            img {
-                max-width: 263px;
-                max-height: 263px;
-                border-radius: 5px;
-            }
-    
-            h4 { margin-bottom: 0; }
-    
-            .social-network {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                
-                a {                
-                    font-size: 30px;
-                }
-            }
+.about-row {
+    animation: displayDelay 1s;
+    .about-info {
+        display: flex;
+        flex-wrap: wrap;            
+        justify-content: center;
+        img {
+            max-width: 255px;
+            max-height: 250px;
+            border-radius: 50%;
+            border: 10px solid #ffffff;
+            animation: bounceIn 1s;
         }
-
+    
+        p {
+            font-family: 'Courgette', cursive;
+            color: #c3c3c3;
+            padding: 10px;            
+        }
+        
     }
-
-
-    .bio-info {
-        flex: 1 1 70%;
-        .list-group {            
-            margin-left: 15px;
+    
+    .social-network {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        a i {                
+            font-size: 30px;
         }
     }
     
+    .list-group {        
+        li {
+            background-color: inherit;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+        }
+    }
 }
 
-@media screen and (max-width:600px) {
 
-    .bio-info {        
-        .list-group {
-            margin-top: 10px;
-            margin-left: 0 !important;
-        }
+@keyframes bounceIn {
+    0% {
+      opacity: 1;
+      transform: scale(.3);
+    } 
+  
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    } 
+  
+    70% {
+      opacity: 1;
+      transform: scale(.9);
     }
-    
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+@keyframes displayDelay {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
 }
